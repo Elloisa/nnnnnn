@@ -1,0 +1,23 @@
+{
+  "name": "clase-11",
+  "version": "1.0.0",
+  "description": "",
+  "main": "appMercadoLiebre.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elloisa/mercadoLiebreDH.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elloisa/mercadoLiebreDH/issues"
+  },
+  "homepage": "https://github.com/Elloisa/mercadoLiebreDH#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
