@@ -4,6 +4,7 @@
   "description": "",
   "main": "appMercadoLiebre.js",
   "scripts": {
+    "start": "nodemon appMercadoLiebre.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +20,8 @@
   "homepage": "https://github.com/Elloisa/mercadoLiebreDH#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
