@@ -12,6 +12,6 @@ app.listen(3003, () => {
 });
 
 app.get("/home", (req, res) => {
-    let htmlPath= path.resolve(__dirname, "./mercadoLiebreDH/views/homeMercadoLiebre.html");
+    let htmlPath= path.resolve(__dirname, "./views/homeMercadoLiebre.html");
     res.sendFile(htmlPath);
 })
