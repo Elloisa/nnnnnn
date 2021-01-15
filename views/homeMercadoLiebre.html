@@ -8,7 +8,7 @@
     <!--Fuente roboto-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link rel=“stylesheet” href=“https://pro.fontawesome.com/releases/v5.10.0/css/all.css” integrity=“sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p” crossorigin=“anonymous”/>
+    <script src="https://kit.fontawesome.com/f1b0eeafef.js" crossorigin="anonymous"></script>
     <!--Conectar ell archivo CSS con el html.Se recomienda ponerlo al final para que se priorice-->
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">
@@ -17,9 +17,13 @@
    <header>
        <img src="./images/logo-mercado-liebre.svg" alt="Logo">
 
-       <div>Lugar para poner la barra de búsqueda</div><br>
+       <div><!--Lugar para poner la barra de búsqueda-->
+        <input id="buscador" type="text" name="buscador" placeholder="Buscar productos, marcas" class="buscador-inputs" required> </input>
+        <i class="fas fa-search"></i>
+       </div>
+       
 
-       <div>Compra en cuotas y sin tarjeta de crédito</div>
+       <div><i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjeta de crédito</div>
     <nav>      
         <ul>
             <a href=""><li>Ofertas</li></a>
@@ -29,14 +33,15 @@
         </ul>
     </nav>
 
-    <nav>
-        <ul>
-            <a href=""><li>Crea tu cuenta</li></a>
-            <a href=""><li>Ingresa</li></a>
-            <a href=""><li>Mis compras</li></a>
-        </ul>
-
-    </nav>
+    <div>
+            <div>Crea tu cuenta<i class="far fa-address-card"></i></div>
+            <div>Ingresa<i class="fas fa-sign-in-alt"></i></div>
+            <div>Mis compras<i class="fas fa-shopping-cart"></i></div>
+    </div>
+    
+    <div class="burger-menu">
+        <i class="fa fa-bars burger"></i>
+       </div>
 
    </header>
 
@@ -122,14 +127,17 @@
 
    <footer>
        <section>
+        <i class="far fa-credit-card"></i>
            <h3>Paga con tarjeta o en efectivo</h3>
            <p>Con Mercado Liebre Cash, tienes cuotas sin interpes con cuotas o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
        </section>
        <section>
+        <i class="fas fa-gift"></i>
         <h3>Envío gratis desde $2.500</h3>
         <p>Solo por estar registrd@ en Mercado Liebre, tienes envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
     </section>
     <section>
+        <i class="fas fa-user-shield"></i>
         <h3>Seguridad de principio a fin</h3>
         <p>¿No te gusta? !Devuélvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
     </section>
