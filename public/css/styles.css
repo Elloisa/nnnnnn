@@ -1,8 +1,298 @@
-body header{
-    background-color: #EAC926;
+/*Declarando especificaciones de estilos */
+:root{
+    /* Tipografía*/
+    --yellow: #EAC926;
+    --blue: #03264C;
+    --light-blue: #1259c3;
+    --dark-grey: #666;
+    --light-grey: #ebebeb;
+    --green: #39b54a;
+    --white: #ffffff;
+     /*Tipografía 
+    --fuente: Roboto, sans-serif;
+     --tamaño-p: 12px;
+     --tamaño-h1: 24px;
+     --tamañoLetraPrecios:18px;
+     --tamañoLetraDescuentos: 16px;
+     --tamaño-h3: 16px;*/
 }
 
-body main{
-    background-color: #EAC926;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
+body{
+    font-family: 'Roboto', Sans-serif;
+    /*background-image: url('https://ezsell.co/wp-content/uploads/2019/07/blog_1-1300x731.jpg');*/
+}
+
+
+/*HEADER */
+.main-header{
+    background-color:var(--yellow);
+    padding: 20px;
+    width: 100%;
+}
+
+.main-header-top-bar{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.logo{
+    width: 50%;
+    height: 50px;
+
+
+}
+
+.searcher{
+    display: block;
+    flex-grow: 50%;
+
+}
+
+.searcher-inputs{
+    border: solid 0 var(--white);
+    height: 25px;
+}
+
+.searcher-button{
+    background-color: var(--white);
+    color: var(--dark-grey) ;
+    display: inline-block;
+    max-width: 40px;
+    height: 25px;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    margin:0;
+    border-radius: 2px;
+
+}
+
+
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.hamburger-button{
+    background-color: var(--celeste);
+    color: var(--white);
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+.main-nav-bar{
+    display: none;
+}
+
+.main-nav-bar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.main-nav-bar a{
+    text-decoration: none;
+    color: var(--grisOscuro);
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+
+/* Navegación en Tablets*/
+@media(min-width: 361px){
+    .main-header-top-bar{
+   
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .copy-header{
+        max-width: 350px;
+        text-align: right;
+
+    }
+
+    .hamburger-button{
+        display: none; /*Para que deje de visualizarse*/
+    
+    }
+
+    .main-nav-bar{
+       
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-nav-bar ul{
+        display: flex;
+    }
+
+    .main-nav-bar li{
+        margin: 0 5px;
+
+    }
+
+}
+
+/* Navegación en desktop*/
+@media(min-width:769px){
+    .logo{
+        width:250px;
+    }
+    
+    .main-header-top-bar, .main-nav-bar{
+        
+        max-width: 1200px;
+        margin: auto; /*logo que los elementos se centren y tengan un ancho máximo */
+
+    }
+
+    .main-header-top-bar{
+        align-items: center;
+    }
+
+    .main-nav-bar{
+        margin: 30px;
+    }
+
+    .main-nav-bar li{
+        margin: 0 10px;
+
+    }
+
+    .main-nav-bar a{
+        font-size: 19px;
+    }
+
+    .copy-header{
+        max-width: none;
+        font-size: 22px;
+        font-weight: 400;
+        margin: 0;
+
+    }
+}
+
+/* MAIN*/
+main{
+    background-color:var(--light-grey)
+}
+
+main section h1{
+    padding: 10px 15px;
+    color: var(--dark-grey);
+    font-size: 24px;
+
+}
+
+.article-visit{
+    display: block;
+    width:90%;
+    margin-bottom: 10px;
+    padding: 15px;
+    border: solid 1px var(--white);
+}
+
+
+.box-visit{
+    border-top: solid 1px var(--light-grey);
+    padding: 15px;
+    box-sizing: border-box;
+    background-color:var(--white);
+    width: 100%;
+}
+
+.logo-send{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: solid 1px var(--green);
+    background-color: var(--white);
+    border-radius: 50%;
+    color: var(--green);
+    position: absolute;
+    right: 20px;
+
+
+
+}
+
+.article-cost{
+    display: flex;
+}
+
+.price{
+    width: 30%;
+}
+
+.disccount{
+    color: var(--green);
+    flex-grow: 1;
+}
+
+.img-article{
+    width: 300px;
+    height: 300px;
+}
+
+.copy-header i{
+    width: 2em;
+    height: 2em;
+    margin-bottom: 10px; 
+}
+
+.righ-nav-bar i{
+    width: 2em;
+    height: 2em;
+    margin-bottom: 10px; 
+}
+
+.input:invalid{
+    border: solid 1px red;
+
+}
+
+.create-form{
+    padding: 20px 15px;
+    display: block;
+}
+
+.control-formulario{
+    margin-bottom: 15px;
+
+}
+
+.control-formulario label{
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.control{
+    width: 100%;
+    padding: 8px 8px;
+}
+
+.boton-formulario{
+    background-color: var(--green);
+    border:- none;
+    font-size: 20px;
+    color: var(--white);
+    padding: 5px;
+    border-radius: 5px;
+}

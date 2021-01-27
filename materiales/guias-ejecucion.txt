@@ -1,0 +1,16 @@
+    Color  
+    --yellow: #EAC926;
+    --blue: #03264C;
+    --light-blue: #1259c3;
+    --dark-grey: #666;
+    --light-grey: #ebebeb;
+    --green: #39b54a;
+    --white: #ffffff;
+
+    Tipografía 
+    --fuente: Roboto, sans-serif;
+     --tamaño-p: 12px;
+     --tamaño-h1: 24px;
+     --tamañoLetraPrecios:18px;
+     --tamañoLetraDescuentos: 16px;
+     --tamaño-h3: 16px;
