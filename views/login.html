@@ -4,8 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f1b0eeafef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
+     <!--HEADER--------------------------------------------------------------------------------------------------------------------------------------->
+     <header class="main-header">
+        <div class="main-header-top-bar">
+            <!--Logo-->
+            <img src="./images/logo-mercado-liebre.svg"  class="logo" alt="Logo">
+            <!--Barra de búsqueda-->
+            <div class="searcher">
+                <input id="buscador" type="text" name="buscador" placeholder="Buscar productos, marcas" class="searcher-inputs" required><a href="" class="searcher-button"><i class="fas fa-search"></i></a> </input> 
+            </div>
+        </div>
+            
+            <!--Compra en cuotas-->
+            <div class="copy-header"><i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjeta de crédito</div>
+        
+    
+        <a href="" class="hamburger-button">
+            <i class="fa fa-bars burger"></i>
+        </a>
+    
+           <nav class="main-nav-bar">      
+            <ul class="left-nav-bar">
+                <li><a href="">Ofertas</a></li>
+                <li><a href="">Tiendas Oficiales</a></li>
+                <li><a href="">Vender</a></li>
+                <li><a href="">Ayudar</a></li>
+            </ul>
+    
+            <ul class="righ-nav-bar">
+                <li><a href="/register">Crea tu cuenta<i class="far fa-address-card"></i></a></li>
+                <li><a href="">Ingresa<i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="">Mis compras<i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+       </header>
+    <!--FORM--------------------------------------------------------------------------------------------------------------------------------------->
+       <form action="/home" method="GET" class="create-form">
+        <div class="control-formulario">
+            <label for="nombre">Nombre y Apellido</label><br>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombres y Apellidos" class="control"> <!--type input: text, radio, checkbox, password, email / Atributo "name" es necesario-->
+        </div>
+        <div class="control-formulario">
+            <label for="contraseña">Contraseña</label><br>
+            <input type="password" name="password" id="contraseña" class="control">
+        </div>
+        <button type="submit" class="boton-formulario">Enviar</button>
+           
+
+       </form>
     
 </body>
 </html>
