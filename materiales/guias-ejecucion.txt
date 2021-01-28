@@ -6,11 +6,48 @@
     --light-grey: #ebebeb;
     --green: #39b54a;
     --white: #ffffff;
+    --medium-blue:#0022AA;
 
-    Tipografía 
-    --fuente: Roboto, sans-serif;
-     --tamaño-p: 12px;
-     --tamaño-h1: 24px;
-     --tamañoLetraPrecios:18px;
-     --tamañoLetraDescuentos: 16px;
-     --tamaño-h3: 16px;
+    
+    Tamaños Tipográficos
+    Cuerpos de texto: 12px
+    Titulares (Basado en tu última visita/Ofertas): 24px
+    Precios: 18px
+    Descuentos: 16px
+    Descripciones: 16px
+
+
+
+
+
+        <!--Formulario-->
+    <!--<form action="/crear-producto" method="POST">--><!--El atributo method en formato GET para cuando se trabaja conun formulario de busqueda, cuando se  quiere enviar al servidor es común trabajar con el method en POST-->
+    <!--<div>
+        <label>Nombre del producto:</label>
+        <input type="text" name="nombre">
+    </div>
+    <div>
+        <label>Precio:</label>
+        <input type="text" name="precio" >
+    </div>
+    <div>
+        <label>Categorías:</label>
+        <select name="categoria">--><!--Agrupar opciones dentro de un solo campo-->
+            <!--<option value="hogar">Hogar</option>
+            <option value="electro">Electro</option>
+            <option value="indumentaria">Indumentaria</option>
+        </select> 
+    </div>
+    <div>
+        <label>Ciudad:</label>
+        <select name="ciudad">--><!--Agrupar opciones dentro de un solo campo-->
+            <!--<option value="lima">Lima</option>
+            <option value="ica">Ica</option>
+            <option value="ancash">Ancash</option>
+        </select> 
+    </div>
+    <div>
+        <label>Está en oferta:</label>
+        <input type="radio" name="enOferta" >
+    </div>
+</form>-->
