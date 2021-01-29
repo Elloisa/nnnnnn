@@ -332,6 +332,7 @@ main section h1{
     /*padding: 15px;
     border: solid 1px var(--white);*/
     margin: auto;
+    padding: 10px;
 }
 
 .article-visit img{
