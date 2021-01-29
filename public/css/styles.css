@@ -387,7 +387,7 @@ main section h1{
     font-size: 18px;
 }
 
-.disccount{
+.discount{
     color: var(--green);
     /*flex-grow: 1;*/
     width: 70%;
@@ -421,7 +421,7 @@ main section h1{
         /*box-shadow: 0px 0px 10px rgb(100, 100, 100);*/
         width: 45%;
         transition: box-shadow 450ms;
-        padding: 10px;
+        padding: 10px;/*No borrar*/
         
     }
 
@@ -436,13 +436,36 @@ main section h1{
 }
 
 
-@media(min-width: 769px){
+@media(min-width: 769px)and (max-width: 1069px) {
     .article-visit{
         width: 22.5%;
         
     }
 
+    .price, .discount{
+        width: 100%;
+    }
+
+    .discount{
+        text-align: left;
+    }
+
 }
+
+@media(min-width: 1070px){
+    .article-visit{
+        width: 22.5%;
+        
+    }
+
+    .discount{
+        text-align: center;
+    }
+
+}
+
+
+
 
 
 /*.copy-header i{
