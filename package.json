@@ -4,7 +4,7 @@
   "description": "",
   "main": "appMercadoLiebre.js",
   "scripts": {
-    "start": "nodemon appMercadoLiebre.js",
+    "start": "node appMercadoLiebre.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
