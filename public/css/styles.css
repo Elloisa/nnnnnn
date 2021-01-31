@@ -18,16 +18,7 @@
 
 body{
     font-family: 'Roboto', Sans-serif;
-    /*background-image: url('https://ezsell.co/wp-content/uploads/2019/07/blog_1-1300x731.jpg');*/
 }
-
-/*.back-img{
-    position: relative;
-    left: -50px;
-    top: -50px;
-    z-index: -1500;
-    flex-wrap: nowrap;
-}*/
 
 
 /*------------------------------------MAIN HEADER ----------------------------------------------------------------------------------*/
@@ -203,10 +194,6 @@ body{
 
     }
 
-
-
-
-
 /* -----------------------------------------------------MAIN BODY--------------------------------------------------------------------------------*/
 .main-body{
     background-color:var(--light-grey);
@@ -239,11 +226,6 @@ main section h1{
     width: 100%;
 }
 
-
-/*.img-article{
-    width: 300px;
-    height: 300px;
-}*/
 
 .box-visit{
     position: relative;
@@ -349,20 +331,9 @@ main section h1{
         width: 22.5%;
     }
 
-    /*.price, .discount{
-        width: 100%;
-    }
-
-    .discount{
-        text-align: left;*/
-
 }
 
 @media(min-width: 1070px){
-    /*.article-visit{
-        width: 22.5%;
-        
-    }*/
 
     .price{
         width: 30%;
@@ -377,45 +348,28 @@ main section h1{
 }
 
 
-
-
-
-/*.copy-header i{
-    width: 2em;
-    height: 2em;
-    margin-bottom: 10px; 
-}*/
-
-/*.righ-nav-bar i{
-    width: 2em;
-    height: 2em;
-    margin-bottom: 10px; 
-}*/
-
-/*.input:invalid{
-    border: solid 1px red;
-
-}*/
-
 /*--------------------------------------FORM-------------------------------------------------------------------------------------------------- */
 
 
 .create-form{
     padding: 20px 15px;
     display: block;
-    margin-top: 180px;
-    background-color: var(--light-grey)
-    
+    margin-top: 170px;
+    background-color: var(--light-grey);
+   
 }
 
 .control-formulario{
     margin-bottom: 15px;
+    width: 90%;
+    margin: auto;
 
 }
 
 .control-formulario label{
     margin-bottom: 5px;
     font-style: italic;
+    
 }
 
 .control{
@@ -427,6 +381,12 @@ main section h1{
     border: solid 1px var(--green);
 }
 
+.button{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
 .boton-formulario{
     background-color: var(--green);
     border:- none;
@@ -434,6 +394,8 @@ main section h1{
     color: var(--white);
     padding: 5px;
     border-radius: 5px;
+    width: 90%;
+    margin-top: 15px;
     transition: background-color 450ms
 }
 
@@ -443,7 +405,45 @@ main section h1{
 
 @media(min-width: 361px){
     .create-form{
-    margin-top: 120px;}
+    margin-top: 205px;}
+}
+
+@media(min-width: 477px){
+    .create-form{
+    margin-top: 180px;}
+}
+
+@media(min-width: 498px){
+    .create-form{
+    margin-top: 171px;}
+}
+
+@media(min-width: 594px){
+    .create-form{
+    margin-top: 163px;}
+}
+
+@media(min-width: 637px){
+    .create-form{
+    margin-top: 155px;
+}
+    .control-formulario{
+        max-width: 574px;
+    }
+    .boton-formulario{
+        max-width: 574px;
+    }
+
+}
+
+
+@media(min-width: 727px){
+    .create-form{
+    margin-top: 148px;}
+}
+@media(min-width: 792px){
+    .create-form{
+    margin-top: 128px;}
 }
 
     

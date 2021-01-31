@@ -24,10 +24,11 @@
                     <i class="fas fa-search"></i> 
             </div>
     
-            <div class="copy-header">
-                <i class="fas fa-hand-holding-usd"></i>
-                <div>Compra en cuotas y sin tarjeta de crédito</div>
+
+            <div class="copy-header">  
+                <div><a href=""><i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjeta de crédito</a></div>
             </div>
+            
         </div>   
     
         <a href="" class="hamburger-button">
@@ -56,15 +57,15 @@
        <form action="/home" method="GET" class="create-form">
         <div class="control-formulario">
             <label for="nombre">Nombre y Apellido</label><br>
-            <input type="text" name="nombre" id="nombre" placeholder="Nombres y Apellidos" class="control"> <!--type input: text, radio, checkbox, password, email / Atributo "name" es necesario-->
+            <input type="text" name="nombre" id="nombre" placeholder="Nombres y Apellidos" class="control"  minlength="10"  required> <!--type input: text, radio, checkbox, password, email / Atributo "name" es necesario-->
         </div>
         <div class="control-formulario">
             <label for="contraseña">Contraseña</label><br>
-            <input type="password" name="password" id="contraseña" class="control">
+            <input type="password" name="password" id="contraseña" class="control" minlength="7" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
+            ]" title="La contraseña debe contener valores alfanuméricos, no se aceptan mayúsculas y se aceptan un mínimo de 7 caracteres" required>
         </div>
-        <button type="submit" class="boton-formulario">Enviar</button>
-           
-
+        
+        <div class="button"><button type="submit" class="boton-formulario">Enviar</button></div>
        </form>
 <!---------------------------------------------------------------------FOOTER--------------------------------------------------------------->
 <footer class="main-footer">

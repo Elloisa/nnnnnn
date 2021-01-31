@@ -24,10 +24,10 @@
                     <i class="fas fa-search"></i> 
             </div>
     
-            <div class="copy-header">
-                <i class="fas fa-hand-holding-usd"></i>
-                <div>Compra en cuotas y sin tarjeta de crédito</div>
+            <div class="copy-header">  
+                <div><a href=""><i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjeta de crédito</a></div>
             </div>
+          
         </div>   
     
         <a href="" class="hamburger-button">
@@ -51,10 +51,11 @@
        </header>
 
     <!--FORM---------------------------------------------------------------------------------------------------------------------------->
-   <form action="/home" method="GET" class="create-form"><!--No le coloco nada en el method, porque me sale el error "Cannot POST /home"-->
+
+    <form action="/home" method="GET" class="create-form"><!--No le coloco nada en el method, porque me sale el error "Cannot POST /home"-->
         <div class="control-formulario"><!--Revisar porqué se agregó  class input-->
         <label for="nombre">Nombre y Apellido</label><br>
-        <input type="text" name="nombre" id="nombre" placeholder="Nombres y Apellidos" class="control"> <!--type input: text, radio, checkbox, password, email / Atributo "name" es necesario-->
+        <input type="text" name="nombre" id="nombre" placeholder="Nombres y Apellidos" class="control" minlength="10"  required> <!--type input: text, radio, checkbox, password, email / Atributo "name" es necesario-->
     </div>
 
     <div class="control-formulario">
@@ -106,10 +107,10 @@
     </select></div>
 
 <!--Dos formas de colocar un botón-->
-    <button type="submit" class="boton-formulario">Enviar</button>
+<div class="button"><button type="submit" class="boton-formulario">Enviar</button></div>
    <!--- <input type="submit" value="Enviar" href="/home">-->
     <!--<input type="reset" value="Borrar" href="/register">-->
-    <button type="reset" class="boton-formulario">Borrar</button>
+    <div class="button"><button type="reset" class="boton-formulario">Borrar</button></div>
 
 
     </form>
